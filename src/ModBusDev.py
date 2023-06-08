@@ -18,11 +18,9 @@ class connectionType(enum.Enum):
     RTU = 1
     TCP = 2
 
-
 class registerType(enum.Enum):
     INPUT = 1
     HOLDING = 2
-
 
 class registerDataType(enum.Enum):
 	BITS = 1
@@ -39,12 +37,10 @@ class registerDataType(enum.Enum):
 	STRING = 12
 	RAW = 13
 
-
 RETRIES = 3
 TIMEOUT = 1
 UNIT = 1
-
-
+#===================================================================
 class ModBusDev:
 	model = "Generic"
 	registers = {}
@@ -365,7 +361,6 @@ class ModBusDev:
 
 	# ----------------------------------------------------------------------------------	
 	def read_list(self, items):
-	
 		reglist = [(k, *v) for k, v in self.registers.items() if (k in items)]
 			
 		results = {}

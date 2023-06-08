@@ -1,4 +1,6 @@
-#from ModBusDev import *
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
 import ModBusDev as MBD
 from pymodbus.constants import Endian
 
